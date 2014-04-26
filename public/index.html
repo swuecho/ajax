@@ -7,33 +7,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>GETTING STARTED WITH BRACKETS</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript">
-     
-function codeit() {
-      /* get values of text fields */
-      var dt = $('#definition').val();
-      var dd = $('#explaintaion').val();
-      var resultstr = "<dl><dt>" + dt + "</dt><dd>" + dd + "</dd></dl>";
-     $("#samplecode").val(resultstr);
-     $("#preview").html(resultstr);
-}
-
-    /*
-function doinit() {
-      $('input').keyup(codeit);
-      $('input').click(codeit);
-      doreset();
-}
-
-function doreset() {
-      codeit();
-}
-    */
-</script>
+<script data-main="scripts/main" src="scripts/require.js"></script>
 </head>
 <body>
-
 
 <div class="inputs">
 <form action="" onreset="doreset();">
@@ -51,7 +27,7 @@ function doreset() {
      
  <div class="submit">
   <input type="reset" />
-  <button onclick="codeit(); return false;">Build It!</button> 
+  <button onclick="dodo(); return false;">Build It!</button> 
  </div>
  </fieldset>
 </form>
